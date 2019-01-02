@@ -255,6 +255,46 @@ table {
   }
 }
 
+// Report
+.report-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'ting1 ting2'
+    'ting3 ting4';
+  grid-template-columns: repeat(2, 1fr);
+
+  .ting-1 {
+    grid-area: ting1;
+  }
+
+  .ting-2 {
+    grid-area: ting2;
+  }
+
+  .ting-3 {
+    grid-area: ting3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ting-4 {
+    grid-area: ting4;
+  }
+
+  .ting {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: solid $secondary-color 5px;
+  }
+
+  .color-image {
+    margin: auto;
+    border-radius: 50%;
+    border: solid $secondary-color 3px;
+  }
+}
+
 // Button Styles
 .btn {
   display: block;

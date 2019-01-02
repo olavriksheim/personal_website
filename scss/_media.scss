@@ -93,3 +93,9 @@
     font-size: 16vw;
   }
 }
+
+@include mediaHg {
+  .menu .nav-link {
+    font-size: 1.2rem;
+  }
+}
