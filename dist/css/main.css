@@ -296,6 +296,21 @@ table {
     padding: 0.5rem;
     border-bottom: solid #eece1a 5px; }
 
+.databases-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'comp' 'ting1';
+  grid-template-columns: repeat(1, 1fr); }
+  .databases-info .competance {
+    grid-area: comp;
+    font-size: 1.5rem; }
+  .databases-info .ting-1 {
+    grid-area: ting1; }
+  .databases-info .ting {
+    background: #404040;
+    padding: 0.5rem;
+    border-bottom: solid #eece1a 5px; }
+
 .projects {
   display: grid;
   grid-gap: 0.7rem;
