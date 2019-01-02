@@ -33,6 +33,16 @@ h3 {
   }
 }
 
+h5 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
 a {
   color: set-text-color($primary-color);
   text-decoration: none;
@@ -135,6 +145,31 @@ table {
   th {
     background: darken($primary-color, 3);
     border: none;
+  }
+}
+
+// Websites & Multimedia
+.websites-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'comp'
+    'ting1';
+  grid-template-columns: repeat(1, 1fr);
+
+  .competance {
+    grid-area: comp;
+    font-size: 1.5rem;
+  }
+
+  .ting-1 {
+    grid-area: ting1;
+  }
+
+  .ting {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: solid $secondary-color 5px;
   }
 }
 
