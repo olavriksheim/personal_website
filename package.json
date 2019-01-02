@@ -1,0 +1,14 @@
+{
+  "name": "nettside",
+  "version": "1.0.0",
+  "description": "Personlig Nettside",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Olav Riksheim",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
