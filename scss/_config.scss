@@ -66,6 +66,12 @@ $background-opacity: 0.9;
   }
 }
 
+@mixin mediaMb {
+  @media screen and (max-height: 730px) and (max-width: 500px) {
+    @content;
+  }
+}
+
 @mixin mediaHg {
   @media screen and (max-height: 730px) {
     @content;

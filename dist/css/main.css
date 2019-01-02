@@ -426,6 +426,10 @@ table {
   .websites h1.lg-heading {
     font-size: 16vw; } }
 
+@media screen and (max-height: 730px) and (max-width: 500px) {
+  .menu .nav-link {
+    font-size: 1.15rem; } }
+
 @media screen and (max-height: 730px) {
   .menu .nav-link {
-    font-size: 1.2rem; } }
+    font-size: 1.3rem; } }

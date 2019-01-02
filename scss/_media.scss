@@ -94,8 +94,16 @@
   }
 }
 
+// Nav height and width
+@include mediaMb {
+  .menu .nav-link {
+    font-size: 1.15rem;
+  }
+}
+
+// Height
 @include mediaHg {
   .menu .nav-link {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
