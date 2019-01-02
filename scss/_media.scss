@@ -65,6 +65,14 @@
   .projects {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .menu .nav-link {
+    font-size: 1.5rem;
+  }
+
+  .websites h1.lg-heading {
+    font-size: 5rem;
+  }
 }
 
 // Smartphones
@@ -79,5 +87,9 @@
 
   h1.lg-heading {
     font-size: 19vw;
+  }
+
+  .websites h1.lg-heading {
+    font-size: 16vw;
   }
 }

@@ -69,7 +69,7 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 30px;
+    font-size: 2rem;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -386,7 +386,11 @@ table {
     grid-template-areas: 'bioimage' 'bio' 'ting1' 'ting2' 'ting3';
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .menu .nav-link {
+    font-size: 1.5rem; }
+  .websites h1.lg-heading {
+    font-size: 5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -394,4 +398,6 @@ table {
   .projects {
     grid-template-columns: 1fr; }
   h1.lg-heading {
-    font-size: 19vw; } }
+    font-size: 19vw; }
+  .websites h1.lg-heading {
+    font-size: 16vw; } }
