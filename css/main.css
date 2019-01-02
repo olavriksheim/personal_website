@@ -259,7 +259,7 @@ table {
   display: grid;
   grid-gap: 30px;
   grid-template-areas: 'comp comp' 'ting1 ting2';
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(1, 1fr); }
   .digital-info .competance {
     grid-area: comp;
     font-size: 1.5rem; }
@@ -408,6 +408,21 @@ table {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'ting1' 'ting2' 'ting3';
     grid-template-columns: 1fr; }
+  .digital-info {
+    grid-template-areas: 'comp' 'ting1' 'ting2';
+    grid-template-columns: 1fr; }
+    .digital-info iframe {
+      width: 60vw;
+      height: 33.9vw; }
+  .websites-info {
+    grid-template-areas: 'comp' 'ting1';
+    grid-template-columns: 1fr; }
+  .databases-info {
+    grid-template-areas: 'comp' 'ting1';
+    grid-template-columns: 1fr; }
+  .report-info {
+    grid-template-areas: 'ting1' 'ting2' 'ting3' 'ting4';
+    grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
   .menu .nav-link {
@@ -423,7 +438,10 @@ table {
   h1.lg-heading {
     font-size: 19vw; }
   .websites h1.lg-heading {
-    font-size: 16vw; } }
+    font-size: 16vw; }
+  .digital-info iframe {
+    width: 70vw;
+    height: 39.55vw; } }
 
 @media screen and (max-height: 730px) and (max-width: 500px) {
   .menu .nav-link {
