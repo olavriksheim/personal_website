@@ -1,4 +1,4 @@
-$primary-color: #444;
+$primary-color: #333;
 $secondary-color: #eece1a;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
@@ -16,7 +16,7 @@ $background-opacity: 0.9;
       background-size: cover;
 
       &:after {
-        content: "";
+        content: '';
         position: absolute;
         top: 0;
         right: 0;
@@ -29,7 +29,16 @@ $background-opacity: 0.9;
   }
 }
 
-//Media Quereys
+//Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+//Media Queries
 @mixin mediaSm {
   @media screen and(max-width: 500px) {
     @content;

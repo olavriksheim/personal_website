@@ -1,6 +1,5 @@
-@import "config";
-@import "menu";
-@import "media";
+@import 'config';
+@import 'menu';
 
 * {
   box-sizing: border-box;
@@ -9,10 +8,10 @@
 body {
   @include background;
   background: $primary-color;
-  color: #fff;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5;
 }
 
@@ -35,7 +34,7 @@ h3 {
 }
 
 a {
-  color: #fff;
+  color: set-text-color($primary-color);
   text-decoration: none;
 }
 
@@ -51,7 +50,7 @@ header {
 
 main {
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 60px);
 
   .icons {
     margin-top: 1rem;
@@ -74,3 +73,52 @@ main {
     }
   }
 }
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'bioimage bio bio'
+    'ting1 ting2 ting3';
+  grid-template-columns: repeat(3, 1fr);
+
+  .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: solid $secondary-color 3px;
+  }
+
+  .bio {
+    grid-area: bio;
+    font-size: 1.5rem;
+  }
+
+  .ting-1 {
+    grid-area: ting1;
+  }
+
+  .ting-2 {
+    grid-area: ting2;
+  }
+
+  .ting-3 {
+    grid-area: ting3;
+  }
+
+  .ting {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: solid $secondary-color 5px;
+  }
+}
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}
+
+@import 'media';
