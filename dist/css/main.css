@@ -256,6 +256,31 @@ table {
     background: #2b2b2b;
     border: none; }
 
+.digital-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: 'comp comp' 'ting1 ting2';
+  grid-template-columns: repeat(2, 1fr); }
+  .digital-info .competance {
+    grid-area: comp;
+    font-size: 1.5rem; }
+  .digital-info .ting-1 {
+    grid-area: ting1; }
+  .digital-info .ting-2 {
+    grid-area: ting2; }
+  .digital-info .ting {
+    background: #404040;
+    padding: 0.5rem;
+    border-bottom: solid #eece1a 5px; }
+  .digital-info iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 42vw;
+    height: 23.73vw; }
+
 .websites-info {
   display: grid;
   grid-gap: 30px;

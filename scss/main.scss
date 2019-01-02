@@ -148,6 +148,45 @@ table {
   }
 }
 
+// Our Digital Age
+.digital-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'comp comp'
+    'ting1 ting2';
+  grid-template-columns: repeat(2, 1fr);
+
+  .competance {
+    grid-area: comp;
+    font-size: 1.5rem;
+  }
+
+  .ting-1 {
+    grid-area: ting1;
+  }
+
+  .ting-2 {
+    grid-area: ting2;
+  }
+
+  .ting {
+    background: lighten($primary-color, 5);
+    padding: 0.5rem;
+    border-bottom: solid $secondary-color 5px;
+  }
+
+  iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 42vw;
+    height: 23.73vw;
+  }
+}
+
 // Websites & Multimedia
 .websites-info {
   display: grid;
