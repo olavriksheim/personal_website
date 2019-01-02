@@ -219,11 +219,11 @@ table {
   display: block;
   padding: 0.5rem 1rem;
   border: 0;
-  margin-bottom: 0.3rem; }
+  margin-bottom: 0.3rem;
+  transition: all 0.5s ease-out; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #eece1a;
-    color: #000;
-    transition: all 0.5s ease-out; }
+    color: #000; }
 
 .btn-dark {
   background: black;
