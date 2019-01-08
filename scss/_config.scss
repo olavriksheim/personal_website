@@ -73,7 +73,7 @@ $background-opacity: 0.9;
 }
 
 @mixin mediaHg {
-  @media screen and (max-height: 730px) {
+  @media screen and (min-height: 730px) {
     @content;
   }
 }

@@ -68,7 +68,7 @@
   .menu .nav-link {
     display: inline-block;
     position: relative;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     padding: 1rem 0;
     font-weight: 300;
@@ -446,6 +446,6 @@ table {
   .menu .nav-link {
     font-size: 1.15rem; } }
 
-@media screen and (max-height: 730px) {
+@media screen and (min-height: 730px) {
   .menu .nav-link {
     font-size: 1.15rem; } }
