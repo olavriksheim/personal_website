@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Personlig Nettside",
   "main": "index.js",
+  "homepage": "https://olavriksheim.github.io/personal-website",
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"
